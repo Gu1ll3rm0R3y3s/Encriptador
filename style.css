@@ -1,0 +1,202 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#ebf8ffe5 30%, #f6e7fae5, #fcffebe5);
+    font-family: Franklin Gothic;
+}
+
+#logo{
+    display: inline-block;
+    position: absolute;
+    padding: 0%;
+    width: 10%;
+    left: 10%;
+    top: 1%;
+    transition: .5s;
+    cursor: all;
+}
+#logo:hover{
+    width: 11%;
+}
+#titulo{
+    display: inline-block;
+    position: absolute;
+    left: 18%;
+    font-size: 34px;
+    top: 4%;
+    font-style: italic;
+    text-align: center;
+    opacity: .7;
+    
+}
+
+.principal{
+    position: absolute;
+    width: 44%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    display: inline-block;
+    padding: 1%;
+    box-shadow: -30px 30px 60px 1px #a8a8a8;
+    text-align: center;
+    transition: .5s;
+    cursor: all;
+}
+.resultado{
+    position: absolute;
+    width: 29%;
+    height: 80%;
+    right: 10%;
+    top: 10%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 30px 30px 60px 1px #a8a8a8;
+    padding: 1%;
+    transition: .5s;
+    cursor: all;
+}
+.principal:hover{
+    width: 45%;
+    height: 81%;
+}
+.resultado:hover{
+    width: 30%;
+    height: 81%;
+}
+#texto,
+#copiar{
+    padding: 2%;
+    text-align: justify;
+    font-family: Franklin Gothic;
+    font-style: italic;
+    font-size: 28px;
+    color: black;
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    top: 8%;
+    left: 3%;
+    background: linear-gradient(#fcffebe5, #f6e7fae5, #ebf8ffe5);
+    border: none;
+    line-height: 150%;
+}
+#copiar{
+    height: 40%;
+    font-size: 20px;
+}
+#texto::placeholder,
+#copiar::placeholder{
+    color: #454545;
+    text-align: center;
+    font-family: inter;
+    font-size: 30px;
+    font-style: normal;
+}
+
+#texto:focus,
+#texto:active,
+#copiar:focus,
+#copiar:active{
+    border: none;
+    outline: none;
+
+}
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding: 1%;
+    bottom: 25%;
+    font-size: 14px;
+    color: #495057;
+    opacity: .6;
+}
+.status{
+    position: absolute;
+    bottom: 18%;
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    color: rgb(56, 56, 56);
+
+}
+.botones,
+.boton{
+    display: inline-block;
+    position: absolute;
+    width: 80% ;
+    height: 10%;
+    bottom: 1%;
+    left: 10%;
+
+    padding: 0%;
+
+}
+.botonBorrar,
+.botonPegar,
+.botonEncriptar,
+.botonDesencriptar,
+.botonCopiar{
+    border: none;
+    position: relative;
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    padding: 0%;
+    font-size: 18px;
+    transition: .5s all;
+    cursor: pointer;
+    box-shadow: 10px 10px 9px 1px #616060;
+}
+.botonBorrar:hover,
+.botonPegar:hover,
+.botonEncriptar:hover,
+.botonDesencriptar:hover,
+.botonCopiar:hover{
+    margin: .5%;
+    width: 30.5%;
+    padding: .5%;
+    opacity: .5;
+    box-shadow: 10px 10px 10px 5px #555;
+}
+.imagen img{
+    padding: 0%;
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    height: 40%;
+    left: 15%;
+    bottom: 8%;
+    text-align: center;
+}
+.botonBorrar{
+    color: white;
+    background: rgb(255, 116, 116);
+}
+.botonEncriptar{
+    background: rgb(203, 203, 255);
+}
+.botonDesencriptar{
+    background: rgb(233, 248, 211);
+}
+.botonCopiar{
+    background: rgb(87, 170, 87);
+    width: 50%;
+    color: white;
+    
+}
+.botonCopiar:hover{
+    margin: .5%;
+    width: 51%;
+    padding: .5%;
+    opacity: .5; 
+}
+
+@media screen and (max-width:480px){
+    #titulo{
+        font-size: auto;
+    }
+}

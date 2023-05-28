@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.aluracursos.com/?gclid=CjwKCAjwgqejBhBAEiwAuWHioJeTsDIL1lakRHfpOOG3liWwia5tDxfqbg3fe785TAUsiEGb98BEyBoCDH8QAvD_BwE"><img link="rel"  src="img/alura.png" alt="logo" id="logo"></a>
+        </div>
+        <div>
+            <p id="titulo">Desafio de Alura - principiante en programacion</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="principal">
+            <div class="ingreseTexto">
+                <textarea id="texto" cols="30" rows="10" required placeholder="Ingrese texto aqui"></textarea>
+            </div>
+            <div class="terminos">
+                <p>
+                    Solo letras minusculas y sin acentos
+                </p>
+            </div>
+            <div class="status" id="status">
+                <p>
+                    Ingrese el texto que desea encriptar o desencriptar
+                </p>
+            </div>
+            <div class="botones">
+                <button class="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                <button class="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button class="botonBorrar" onclick="borrar()">Borrar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <div class="imagen">
+                <img src="img/buscar.png" id="imagen">
+            </div>
+            <div>
+                <textarea id="copiar" cols="30" rows="10" placeholder="Ningun texto detectado"></textarea>
+            </div>
+            <div class="boton"> 
+                <button id="botonCopiar" class="botonCopiar" onclick="botonCopiar()">Copiar</button>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
